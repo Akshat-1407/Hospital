@@ -24,7 +24,7 @@ function Home() {
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
           <img
-            src="/public/building.jpg"
+            src="./building.jpg"
             alt="hospital"
             className="rounded-xl shadow-lg w-full max-w-md"
           />

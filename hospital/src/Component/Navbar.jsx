@@ -28,9 +28,6 @@ function Navbar() {
             <Link to="/speciality" className="hover:text-blue-700">
               Specialities
             </Link>
-            <Link to="/diagnosticServices" className="hover:text-blue-700">
-              Diagnostic Services
-            </Link>
             <Link to="/find_a_doctor" className="hover:text-blue-700">
               Find a Doctor
             </Link>
