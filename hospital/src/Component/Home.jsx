@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
           <img
-            src="https://karunahospital.in/wp-content/uploads/2024/03/karuna-hospital.jpg"
+            src="https://karunahospital.in/wp-content/uploads/2024/03/kh-head.jpg"
             alt="hospital"
             className="rounded-xl shadow-lg w-full max-w-md"
           />
