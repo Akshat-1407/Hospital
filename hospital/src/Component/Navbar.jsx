@@ -11,7 +11,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src="https://karunahospital.in/wp-content/uploads/2024/03/logo.png"
+              src="/public/logo_hosp.jpg"
               alt="logo"
               className="h-12"
             />

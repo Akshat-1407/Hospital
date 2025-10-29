@@ -7,7 +7,7 @@ function AboutUs() {
       <section className="bg-[#3B3486] text-white text-center py-16 px-6">
         <h1 className="text-5xl font-serif font-semibold mb-6">About Us</h1>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          Established in 2011, Karuna Hospital is known for its expertise in both outpatient and inpatient services. Empathy lies at the core of our services which reflects in compassionate treatment of our expert doctors and accessible cost structure.
+          Established in 2025, Maa Tulya Hospital is known for its expertise in both outpatient and inpatient services. Empathy lies at the core of our services which reflects in compassionate treatment of our expert doctors and accessible cost structure.
         </p>
         <button className="mt-8 border-2 border-white rounded-full px-6 py-2 font-semibold hover:bg-white hover:text-[#3B3486] transition-all">
           NABH Certificate
@@ -21,7 +21,7 @@ function AboutUs() {
             Our Vision
           </h2>
           <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-            Karuna Hospital seeks excellence in all its endeavours, aspiring to provide state-of-the-art medical services to all strata of society at affordable prices, establishing and enduring doctor–patient relationships, and nurturing an environment where healthcare providers and staff can learn and thrive.
+            Maa Tuya Hospital seeks excellence in all its endeavours, aspiring to provide state-of-the-art medical services to all strata of society at affordable prices, establishing and enduring doctor–patient relationships, and nurturing an environment where healthcare providers and staff can learn and thrive.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ function AboutUs() {
             Our Mission
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6 text-base md:text-lg">
-            Karuna means empathy. Our name symbolizes our mission in its entirety — providing outstanding healthcare facilities to all with compassion and respect, promoting wellness and good health in the community through preventive education and services embedded with love and care.
+            Maa means empathy. Our name symbolizes our mission in its entirety — providing outstanding healthcare facilities to all with compassion and respect, promoting wellness and good health in the community through preventive education and services embedded with love and care.
           </p>
           <h3 className="text-xl font-semibold mb-4">
             Quality Values and Initiatives
@@ -85,7 +85,7 @@ function AboutUs() {
           {/* Email */}
           <div>
             <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.karunahospital@gmail.com</p>
+            <p>admin.maatulyahospital@gmail.com</p>
             <div className="flex space-x-4 mt-2">
               <i className="fab fa-facebook-f"></i>
               <i className="fab fa-instagram"></i>

@@ -16,7 +16,7 @@ function Specialities() {
     },
     {
       title: "Infectious Disease",
-      text: "At Karuna specialists offer expert care for various infections and communicable diseases. We provide comprehensive diagnosis, treatment, and preventive care using advanced medical approaches.",
+      text: "At Maa Tulya Hospital specialists offer expert care for various infections and communicable diseases. We provide comprehensive diagnosis, treatment, and preventive care using advanced medical approaches.",
     },
     {
       title: "Surgery",
@@ -40,7 +40,7 @@ function Specialities() {
     },
     {
       title: "Nephrology",
-      text: "At Karuna Hospital, we provide complete care for acute and chronic kidney conditions, including dialysis and kidney disease management.",
+      text: "At Maa Tulya Hospital, we provide complete care for acute and chronic kidney conditions, including dialysis and kidney disease management.",
     },
     {
       title: "Neurology",
@@ -88,7 +88,7 @@ function Specialities() {
           Our Specialities
         </h1>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed mb-8">
-          At Karuna, we strive to make your well-being our top priority and we
+          At Maa Tulya Hospital, we strive to make your well-being our top priority and we
           ensure that by bringing together multiple medical experts under one
           roof. Various doctors in specialties encompassing Internal Medicine,
           Endocrinology, Paediatrics, and Gynecology work in close collaboration
@@ -106,7 +106,7 @@ function Specialities() {
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg mb-12">
           Experienced doctors with expertise across specialities are associated
-          with Karuna Hospital. This helps us in understanding our patients’
+          with Maa Tulya Hospital. This helps us in understanding our patients’
           problems better and provide complete care.
         </p>
 
@@ -142,7 +142,7 @@ function Specialities() {
           {/* Email */}
           <div>
             <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.karunahospital@gmail.com</p>
+            <p>admin.maatulyahospital@gmail.com</p>
             <div className="flex space-x-4 mt-2">
               <i className="fab fa-facebook-f"></i>
               <i className="fab fa-instagram"></i>

@@ -142,7 +142,7 @@ function FindDoctor() {
           Find Your Doctor
         </h1>
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          Established in 2011, Karuna Hospital is known for its expertise in
+          Established in 2011, Maa Tulya Hospital is known for its expertise in
           both outpatient and inpatient services. Empathy lies at the core of
           our services which reflects in compassionate treatment of our expert
           doctors and accessible cost structures.
@@ -156,7 +156,7 @@ function FindDoctor() {
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg mb-12">
           Experienced doctors with expertise across specialities are associated
-          with Karuna Hospital. This helps us in understanding our patients’
+          with Maa Tulya Hospital. This helps us in understanding our patients’
           problems better and provide complete care.
         </p>
 
@@ -197,7 +197,7 @@ function FindDoctor() {
           </div>
           <div>
             <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.karunahospital@gmail.com</p>
+            <p>admin.maatulyahospital@gmail.com</p>
             <div className="flex space-x-4 mt-2">
               <i className="fab fa-facebook-f"></i>
               <i className="fab fa-instagram"></i>

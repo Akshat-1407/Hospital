@@ -23,7 +23,7 @@ function ContactUs() {
           {/* Email */}
           <div className="flex flex-col items-center">
             <FaEnvelope className="text-4xl mb-4 text-white" />
-            <p className="text-lg font-medium">admin.karunahospital@gmail.com</p>
+            <p className="text-lg font-medium">admin.maatulyahospital@gmail.com</p>
           </div>
         </div>
       </section>
@@ -100,7 +100,7 @@ function ContactUs() {
           {/* Email */}
           <div>
             <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.karunahospital@gmail.com</p>
+            <p>admin.maatulyahospital@gmail.com</p>
             <div className="flex space-x-4 mt-3 text-white">
               <a href="#"><i className="fab fa-facebook-f"></i></a>
               <a href="#"><i className="fab fa-instagram"></i></a>

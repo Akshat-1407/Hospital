@@ -8,11 +8,14 @@ function Home() {
       <section className="bg-[#37327A] text-white flex flex-col md:flex-row items-center justify-between px-8 md:px-24 py-16">
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-snug">
-            Care With <br /> Compassion
+            Maa Tulya Hospital<br></br><br></br>
+          </h1>
+          <h1 className="text-4xl md:text-4xl font-bold leading-snug">
+            Care With Compassion
           </h1>
           <p className="text-gray-200 text-lg">
             Bringing together technology and empathy to make a difference for
-            every individual. Karuna Hospital strives to provide state-of-the-art
+            every individual. Maa Tulya Hospital strives to provide state-of-the-art
             medical care at accessible costs.
           </p>
           <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#37327A] transition">
@@ -21,7 +24,7 @@ function Home() {
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
           <img
-            src="https://karunahospital.in/wp-content/uploads/2024/03/kh-head.jpg"
+            src="/public/building.jpg"
             alt="hospital"
             className="rounded-xl shadow-lg w-full max-w-md"
           />
@@ -30,9 +33,9 @@ function Home() {
 
       {/* ================= ABOUT SECTION ================= */}
       <section className="bg-[#37327A] text-white px-8 md:px-24 py-16 text-center md:text-left">
-        <h2 className="text-3xl font-semibold mb-3">About Karuna Hospital</h2>
+        <h2 className="text-3xl font-semibold mb-3">About Maa Tulya Hospital</h2>
         <p className="text-gray-200 mb-6 max-w-3xl">
-          Established in 2011, Karuna Hospital is known for its expertise in both
+          Established in 2011, Maa Tulya Hospital is known for its expertise in both
           outpatient and inpatient healthcare. The hospital employs a team of
           expert doctors who believe in compassionate and holistic care for all
           patients.
@@ -94,12 +97,12 @@ function Home() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
             <p className="text-gray-200 mb-4 leading-relaxed">
-              As the founder of Karuna Hospital, I have always believed that
+              As the founder of Maa Tulya Hospital, I have always believed that
               empathy and compassion form the foundation of true medical
               excellence. Our mission is to combine advanced technology with
               human care to provide quality treatment accessible to everyone.
             </p>
-            <p className="italic text-gray-300">– Dr. Rajeev Gupta</p>
+            <p className="italic text-gray-300">– Dr. Prashant Sharma</p>
           </div>
           <img
             src="https://karunahospital.in/wp-content/uploads/2024/03/director.jpg"
