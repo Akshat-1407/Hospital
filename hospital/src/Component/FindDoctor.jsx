@@ -1,14 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 function FindDoctor() {
   const doctors = [
     {
-      name: "Dr. Rajeev Gupta",
+      name: "Dr. Prashant Sharma",
       speciality: "Internal Medicine",
       img: "/images/doctors/rajeev-gupta.jpg",
     },
     {
-      name: "Dr. Archana Gupta",
+      name: "Dr. Satya Prakash",
       speciality: "Obstetric and Gynaecology",
       img: "/images/doctors/archana-gupta.jpg",
     },
@@ -33,19 +43,9 @@ function FindDoctor() {
       img: "/images/doctors/anvitun-aggarwal.jpg",
     },
     {
-      name: "Dr. LKG Sinha",
-      speciality: "Internal Medicine",
-      img: "/images/doctors/lkg-sinha.jpg",
-    },
-    {
       name: "Dr. Rajnish Kashyap",
       speciality: "Laparoscopic / General Surgeon",
       img: "/images/doctors/rajnish-kashyap.jpg",
-    },
-    {
-      name: "Dr. Mamta Kumari",
-      speciality: "Radiologist",
-      img: "/images/doctors/mamta-kumari.jpg",
     },
     {
       name: "Dr. Rajan Sareen",
@@ -53,138 +53,136 @@ function FindDoctor() {
       img: "/images/doctors/rajan-sareen.jpg",
     },
     {
-      name: "Dr. Praveen Garg",
-      speciality: "General Surgery",
-      img: "/images/doctors/praveen-garg.jpg",
-    },
-    {
-      name: "Dr. Dnyaneshwar Shankarlal Chandak",
-      speciality: "CMO",
-      img: "/images/doctors/dnyaneshwar-chandak.jpg",
-    },
-    {
-      name: "Dr. SK Jain",
-      speciality: "Orthopaedic Surgeon",
-      img: "/images/doctors/sk-jain.jpg",
-    },
-    {
-      name: "Dr. Vyomesh Bansal",
-      speciality: "ENT",
-      img: "/images/doctors/vyomesh-bansal.jpg",
-    },
-    {
-      name: "Dr. Vasudha Goel",
-      speciality: "Gastroenterology",
-      img: "/images/doctors/vasudha-goel.jpg",
-    },
-    {
       name: "Dr. Abhishek Aggarwal",
       speciality: "Neurologist",
       img: "/images/doctors/abhishek-aggarwal.jpg",
-    },
-    {
-      name: "Dr. Amit Kansal",
-      speciality: "Orthopaedic Surgeon",
-      img: "/images/doctors/amit-kansal.jpg",
-    },
-    {
-      name: "Dr. Pankaj Kumar Garg",
-      speciality: "BHT Consultant",
-      img: "/images/doctors/pankaj-garg.jpg",
-    },
-    {
-      name: "Dr. Madhukar Prakash",
-      speciality: "Orthopaedic Surgeon",
-      img: "/images/doctors/madhukar-prakash.jpg",
-    },
-    {
-      name: "Dr. Ashish Sachan",
-      speciality: "Laparoscopic Gastrointestinal and Cancer Surgeon",
-      img: "/images/doctors/ashish-sachan.jpg",
-    },
-    {
-      name: "Dr. Kapil",
-      speciality: "Gastro Surgeon",
-      img: "/images/doctors/kapil.jpg",
     },
     {
       name: "Dr. Rahul Ramteke",
       speciality: "Cardiologist",
       img: "/images/doctors/rahul-ramteke.jpg",
     },
-    {
-      name: "Dr. Atul Kapila",
-      speciality: "Pathologist",
-      img: "/images/doctors/atul-kapila.jpg",
-    },
-    {
-      name: "Dr. Jahnavi Meena",
-      speciality: "Gynecologist, Obstetrician",
-      img: "/images/doctors/jahnavi-meena.jpg",
-    },
-    {
-      name: "Dr. Naveen Jain",
-      speciality: "Gen Surgery",
-      img: "/images/doctors/naveen-jain.jpg",
-    },
-    {
-      name: "Dr. Abhinam Chauhan",
-      speciality: "Pediatric",
-      img: "/images/doctors/abhinam-chauhan.jpg",
-    },
   ];
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-[#3B3486] text-white text-center py-16 px-6">
+      <motion.section
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-[#3B3486] text-white text-center py-16 px-6"
+      >
         <h1 className="text-5xl font-serif font-semibold mb-6">
           Find Your Doctor
         </h1>
-        <p className="max-w-3xl mx-auto text-lg leading-relaxed">
-          Established in 2011, Maa Tulya Hospital is known for its expertise in
-          both outpatient and inpatient services. Empathy lies at the core of
-          our services which reflects in compassionate treatment of our expert
-          doctors and accessible cost structures.
+        <p className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-100">
+          At Maa Tulya Hospital, we believe in the power of expertise and
+          empathy. Our team of experienced doctors from various specialities
+          ensures personalized care and advanced treatment for every patient.
         </p>
-      </section>
+        <button className="mt-8 border-2 border-white rounded-full px-6 py-2 font-semibold hover:bg-white hover:text-[#3B3486] transition-all">
+          Book Appointment
+        </button>
+      </motion.section>
 
       {/* Doctors Section */}
       <section className="bg-[#F7F0EB] py-16 px-6 text-center">
-        <h2 className="text-4xl font-serif font-semibold mb-4 text-[#3B3486]">
-          Our Doctors
-        </h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl font-serif font-semibold mb-4 text-[#3B3486]"
+        >
+          Meet Our Expert Doctors
+        </motion.h2>
         <p className="max-w-2xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg mb-12">
-          Experienced doctors with expertise across specialities are associated
-          with Maa Tulya Hospital. This helps us in understanding our patients’
-          problems better and provide complete care.
+          Each doctor at Maa Tulya Hospital brings years of clinical experience,
+          compassionate patient interaction, and a commitment to excellence in
+          healthcare. Discover our team of specialists who work together to
+          provide holistic and integrated medical solutions.
         </p>
 
         {/* Doctors Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
           {doctors.map((doctor, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-200 flex flex-col items-center p-5"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              className="bg-white border border-[#E4DAD2] rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 p-5 flex flex-col items-center"
             >
               <img
                 src={doctor.img}
                 alt={doctor.name}
-                className="w-48 h-48 object-cover rounded-lg mb-4"
+                className="w-40 h-40 object-cover rounded-full mb-4 border-4 border-[#3B3486]/20"
               />
-              <h3 className="text-[#3B3486] font-semibold text-lg md:text-xl">
+              <h3 className="text-[#3B3486] font-serif font-semibold text-lg md:text-xl mb-1">
                 {doctor.name}
               </h3>
-              <p className="text-gray-600 text-sm md:text-base mb-3">
+              <p className="text-gray-700 text-sm md:text-base mb-4">
                 {doctor.speciality}
               </p>
-              <button className="text-[#3B3486] font-medium hover:underline">
-                View Profile →
+              <button className="text-[#3B3486] border border-[#3B3486] px-4 py-1 rounded-full hover:bg-[#3B3486] hover:text-white transition-all duration-200">
+                View Profile
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
+
+      {/* Compassion Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-white py-20 px-6 md:px-20 text-center"
+      >
+        <h2 className="text-4xl font-serif font-semibold text-[#3B3486] mb-6">
+          Compassion Meets Expertise
+        </h2>
+        <p className="max-w-3xl mx-auto text-gray-700 text-lg mb-10">
+          Every consultation at Maa Tulya Hospital is a step toward better
+          health, guided by trust and care. Our doctors combine the art of
+          healing with modern medical science to ensure that you receive the
+          best treatment possible.
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-[#3B3486] text-white rounded-full px-8 py-3 font-semibold hover:bg-[#2E277A] transition-all"
+        >
+          Consult Now
+        </motion.button>
+      </motion.section>
+
+      {/* Write To Us Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-r from-[#3B3486] to-[#5C55A5] text-white text-center py-20 px-6"
+      >
+        <h2 className="text-4xl font-serif font-semibold mb-4">
+          Need Help Finding a Doctor?
+        </h2>
+        <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-100">
+          Unsure which specialist to consult? Let us guide you. Share your
+          symptoms or health concerns, and our medical team will connect you
+          with the right doctor for your needs.
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-white text-[#3B3486] rounded-full px-8 py-3 font-semibold hover:bg-[#E4E4E4] transition-all"
+        >
+          Get Assistance
+        </motion.button>
+      </motion.section>
 
       {/* 🌆 Enhanced Footer Section */}
       <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">
@@ -257,4 +255,5 @@ function FindDoctor() {
     </div>
   );
 }
+
 export default FindDoctor;

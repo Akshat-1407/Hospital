@@ -138,21 +138,25 @@ function Home() {
       </section>
 
       {/* ================= CTA SECTION ================= */}
-      <section className="relative">
-        <img
-          src="https://karunahospital.in/wp-content/uploads/2024/03/lab.jpg"
-          alt="lab"
-          className="w-full h-[400px] md:h-[500px] object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-5">
-            Start Your Journey To Improved Health Today
-          </h2>
-          <button className="bg-white text-[#37327A] px-6 py-2 rounded-full hover:bg-gray-200 transition">
-            Book An Appointment
-          </button>
-        </div>
-      </section>
+      {/* Responsive video with overlay (React + Tailwind) */}
+  <section className="py-12">
+    <div className="max-w-4xl mx-auto px-4"> {/* max width: leaves space on wide screens */}
+      <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            {/* Aspect-ratio container (Tailwind v3: use 'aspect-video') */}
+            <div className="w-full aspect-video bg-black relative rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                id="inlineFrame"
+                title="Maa Tulya Hospital - Intro"
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/GmRi5KBRQR4?rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1&loop=1&playlist=GmRi5KBRQR4"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+      </div>
+    </div>
+  </section>
+
 
       {/* 🌆 Enhanced Footer Section */}
       <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">

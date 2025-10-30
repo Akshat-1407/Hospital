@@ -11,6 +11,7 @@ function AboutUs() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <h1 className="text-5xl md:text-6xl font-serif font-semibold mb-6">
             About Maa Tulya Hospital
@@ -33,11 +34,13 @@ function AboutUs() {
           className="absolute -top-10 -right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"
           animate={{ y: [0, 30, 0] }}
           transition={{ repeat: Infinity, duration: 6 }}
+          viewport={{ once: true }}
         />
         <motion.div
           className="absolute bottom-0 left-10 w-48 h-48 bg-[#5C5792]/30 rounded-full blur-3xl"
           animate={{ y: [0, -20, 0] }}
           transition={{ repeat: Infinity, duration: 5 }}
+          viewport={{ once: true }}
         />
       </section>
 
@@ -180,6 +183,7 @@ function AboutUs() {
           className="absolute -right-20 bottom-0 w-72 h-72 bg-[#3B3486]/10 rounded-full blur-3xl"
           animate={{ y: [0, -20, 0] }}
           transition={{ repeat: Infinity, duration: 7 }}
+          viewport={{ once: true }}
         />
       </section>
 

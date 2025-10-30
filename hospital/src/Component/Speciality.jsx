@@ -69,6 +69,7 @@ function Specialities() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="bg-[#3B3486] text-white text-center py-16 px-6"
       >
         <h1 className="text-5xl font-serif font-semibold mb-6">
@@ -91,6 +92,7 @@ function Specialities() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-4xl font-serif font-semibold text-[#3B3486] mb-4"
         >
           Centres of Excellence
@@ -110,6 +112,7 @@ function Specialities() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
+              viewport={{ once: true }}
               className="bg-white border border-[#E4DAD2] rounded-2xl p-8 shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
             >
               <h3 className="text-2xl font-serif font-semibold text-[#3B3486] mb-3">
@@ -128,6 +131,7 @@ function Specialities() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="bg-white py-20 px-6 md:px-20 text-center"
       >
         <h2 className="text-4xl font-serif font-semibold text-[#3B3486] mb-6">
@@ -151,6 +155,7 @@ function Specialities() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="bg-gradient-to-r from-[#3B3486] to-[#5C55A5] text-white text-center py-20 px-6"
       >
         <h2 className="text-4xl font-serif font-semibold mb-4">
