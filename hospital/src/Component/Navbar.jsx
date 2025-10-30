@@ -90,10 +90,15 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-3 animate-slideDown">
             <img
-              src="/public/logo_hosp.jpg"
+              src="/public/hosp_logo.png"
               alt="logo"
-              className="h-12 hover:scale-105 transition-transform"
+              className="h-20 hover:scale-105 transition-transform"
             />
+            <span>
+              <h1 className="text-4xl md:text-5xl font-bold font-serif">
+                 Maa Tulya Hospital
+              </h1>
+            </span>
           </div>
 
           {/* Desktop Links */}

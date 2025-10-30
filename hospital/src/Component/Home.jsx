@@ -7,10 +7,7 @@ function Home() {
       {/* ================= HERO SECTION ================= */}
       <section className="bg-[#37327A] text-white flex flex-col md:flex-row items-center justify-between px-8 md:px-24 py-16">
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold leading-snug">
-            Maa Tulya Hospital<br></br><br></br>
-          </h1>
-          <h1 className="text-4xl md:text-4xl font-bold leading-snug">
+          <h1 className="text-5xl md:text-5xl font-bold leading-snug">
             Care With Compassion
           </h1>
           <p className="text-gray-200 text-lg">
