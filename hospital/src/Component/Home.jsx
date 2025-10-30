@@ -136,28 +136,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* ================= CTA SECTION ================= */}
-      {/* Responsive video with overlay (React + Tailwind) */}
-  <section className="py-12">
-    <div className="max-w-4xl mx-auto px-4"> {/* max width: leaves space on wide screens */}
-      <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            {/* Aspect-ratio container (Tailwind v3: use 'aspect-video') */}
-            <div className="w-full aspect-video bg-black relative rounded-2xl overflow-hidden shadow-lg">
-              <iframe
-                id="inlineFrame"
-                title="Maa Tulya Hospital - Intro"
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/GmRi5KBRQR4?rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1&loop=1&playlist=GmRi5KBRQR4"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-      </div>
-    </div>
-  </section>
-
-
       {/* 🌆 Enhanced Footer Section */}
       <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-b border-white/20 pb-10">
@@ -201,8 +179,8 @@ function Home() {
             <ul className="space-y-2 text-gray-200 text-sm">
               <li><a href="/" className="hover:text-[#FFD700]">Home</a></li>
               <li><a href="/about" className="hover:text-[#FFD700]">About Us</a></li>
-              <li><a href="/specialities" className="hover:text-[#FFD700]">Specialities</a></li>
-              <li><a href="/contact" className="hover:text-[#FFD700]">Contact</a></li>
+              <li><a href="/speciality" className="hover:text-[#FFD700]">Specialities</a></li>
+              <li><a href="/contactUs" className="hover:text-[#FFD700]">Contact</a></li>
             </ul>
           </div>
 
