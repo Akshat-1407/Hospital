@@ -186,46 +186,75 @@ function FindDoctor() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#3B3486] text-white py-12 px-6 md:px-20 text-sm">
-        <div className="grid md:grid-cols-4 gap-10 border-t border-[#5C5792] pt-8">
+      {/* 🌆 Enhanced Footer Section */}
+      <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-b border-white/20 pb-10">
+          {/* Hospital Info */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Contacts</h3>
-            <p>8588831732 9873754555</p>
-            <p>011-40793535 79620024</p>
-            <p>9873753999</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.maatulyahospital@gmail.com</p>
-            <div className="flex space-x-4 mt-2">
-              <i className="fab fa-facebook-f"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-x-twitter"></i>
+            <h3 className="text-2xl font-semibold mb-4">Maa Tulya Hospital</h3>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Dedicated to providing compassionate and quality healthcare
+              to every individual with trust and care.
+            </p>
+            <div className="flex space-x-4 mt-5">
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-instagram text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-linkedin-in text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-x-twitter text-lg"></i>
+              </a>
             </div>
           </div>
+
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Home</h3>
-            <ul className="space-y-1">
-              <li>About Us</li>
-              <li>NABH</li>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>📍 Plot No. 12, Sector 9, Dwarka, New Delhi</li>
+              <li>📞 8588831732 / 9873754555</li>
+              <li>☎️ 011-40793535 / 011-79620024</li>
+              <li>✉️ admin.maatulyahospital@gmail.com</li>
             </ul>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Specialities</h3>
-            <ul className="space-y-1">
-              <li>Find a Doctor</li>
-              <li>Contact</li>
+            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li><a href="/" className="hover:text-[#FFD700]">Home</a></li>
+              <li><a href="/about" className="hover:text-[#FFD700]">About Us</a></li>
+              <li><a href="/specialities" className="hover:text-[#FFD700]">Specialities</a></li>
+              <li><a href="/contact" className="hover:text-[#FFD700]">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>✔️ Emergency & Trauma Care</li>
+              <li>✔️ Multi-Speciality OPD</li>
+              <li>✔️ Diagnostic & Lab Services</li>
+              <li>✔️ Maternity & Child Care</li>
             </ul>
           </div>
         </div>
 
-        <div className="text-center text-xs mt-10 opacity-80">
-          Copyright © 2025. All Rights Reserved | Designed by RNA HealthTech
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8 text-gray-300 text-xs border-t border-white/10 pt-6">
+          <p>© {new Date().getFullYear()} Maa Tulya Hospital. All Rights Reserved.</p>
+          <p className="mt-3 md:mt-0">
+            Designed & Developed by{" "}
+            <span className="font-semibold text-[#FFD700]">ADITYA SHARMA</span>
+          </p>
         </div>
       </footer>
     </div>
   );
 }
-
 export default FindDoctor;

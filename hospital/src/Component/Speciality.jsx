@@ -1,121 +1,116 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Specialities() {
   const specialities = [
     {
       title: "Internal Medicine",
-      text: "Trust our specialists for prevention, diagnosis, and treatment of adult diseases. From common ailments to life-threatening conditions, we’re here to help you stay healthy.",
+      text: "Our internal medicine department provides preventive, diagnostic, and therapeutic services for adult diseases. We specialize in managing complex medical conditions with personalized attention.",
     },
     {
-      title: "Obst & Gynae",
-      text: "Our experienced gynaecologists and obstetricians provide comprehensive women’s healthcare services. We offer complete maternal care during pregnancy, childbirth, and postpartum periods.",
+      title: "Obstetrics & Gynaecology",
+      text: "From routine checkups to high-risk pregnancies, our experienced gynaecologists and obstetricians ensure comprehensive care for every woman at every stage of life.",
     },
     {
-      title: "Endocrinology",
-      text: "We provide expert care for hormonal disorders, growth disorders, and other endocrine system–related issues.",
+      title: "Paediatrics & Neonatology",
+      text: "Our pediatric specialists focus on your child’s complete health journey — from newborn care and vaccinations to treatment of childhood diseases with compassion and expertise.",
     },
     {
-      title: "Infectious Disease",
-      text: "At Maa Tulya Hospital specialists offer expert care for various infections and communicable diseases. We provide comprehensive diagnosis, treatment, and preventive care using advanced medical approaches.",
-    },
-    {
-      title: "Surgery",
-      text: "Experience excellence in surgery with our advanced facilities. From cancer surgery, bariatric surgery, hernia and gastro-intestinal surgery, to oncology and hepatobiliary surgery.",
-    },
-    {
-      title: "Orthopaedics",
-      text: "Get expert care for bone and joint issues, including fractures and arthritis. Our specialized machines and skilled surgeons ensure the best outcomes for you.",
-    },
-    {
-      title: "Paediatrics",
-      text: "Our dedicated paediatricians and specialised facilities ensure the best care for your little ones.",
-    },
-    {
-      title: "Gastroenterology",
-      text: "Our gastroenterology department offers comprehensive care for digestive system disorders, including liver and pancreas diseases.",
+      title: "Orthopaedics & Joint Replacement",
+      text: "We provide specialized care for fractures, arthritis, and sports injuries. Our advanced orthopaedic team ensures quick recovery with minimal discomfort.",
     },
     {
       title: "Cardiology",
-      text: "Keep your heart healthy with regular checkups at our cardiology department. We offer advanced care for all age groups.",
+      text: "Offering advanced cardiac diagnostics and treatment, we help patients manage and recover from heart conditions with precision and care.",
     },
     {
-      title: "Nephrology",
-      text: "At Maa Tulya Hospital, we provide complete care for acute and chronic kidney conditions, including dialysis and kidney disease management.",
+      title: "Neurology & Neurosurgery",
+      text: "Comprehensive care for disorders of the brain, spine, and nervous system using state-of-the-art neuroimaging and surgical expertise.",
     },
     {
-      title: "Neurology",
-      text: "Experience comprehensive neurological care with our state-of-the-art facilities and expert team.",
+      title: "Gastroenterology",
+      text: "We specialize in the prevention, diagnosis, and treatment of digestive and liver diseases using endoscopic and minimally invasive procedures.",
     },
     {
-      title: "Dermatology",
-      text: "Our dermatology specialists offer advanced treatments for skin conditions and surgical techniques like hair transplant.",
+      title: "Urology & Nephrology",
+      text: "Expert management of kidney diseases, urinary tract disorders, and dialysis with compassionate and advanced medical care.",
     },
     {
-      title: "Ear Nose Throat (ENT)",
-      text: "Receive specialized treatment for ENT conditions, including surgical and medical interventions for your comfort.",
+      title: "Dermatology & Cosmetology",
+      text: "Providing expert skincare and cosmetic treatments for all ages using the latest dermatological advancements.",
     },
     {
-      title: "Psychiatry",
-      text: "Find compassionate care for mental health disorders with our psychiatrists. We address a range of conditions to support your well-being.",
+      title: "ENT (Ear, Nose & Throat)",
+      text: "Specialized treatment for hearing loss, sinus issues, throat infections, and other ENT conditions using advanced diagnostic technology.",
     },
     {
-      title: "Faciomaxillary Surgery",
-      text: "We provide expert maxillofacial care for facial trauma, jaw deformities, and complex facial reconstructions.",
+      title: "Radiology & Imaging",
+      text: "Our 24×7 radiology department uses cutting-edge imaging tools such as CT, MRI, and ultrasound for precise and timely diagnosis.",
     },
     {
-      title: "Urology",
-      text: "From incontinence to prostate disease, our urology department provides comprehensive care for urological conditions.",
-    },
-    {
-      title: "Radiology",
-      text: "Get accurate diagnoses with our 24-hour radiology services. Our skilled radiologists use advanced imaging technology to ensure precise results.",
-    },
-    {
-      title: "Pathology",
-      text: "Trust our 24/7 pathology lab for accurate diagnostics. Our expert pathologists work tirelessly to ensure timely results.",
-    },
-    {
-      title: "Intensive Care",
-      text: "Receive dedicated care in our intensive care unit. With round-the-clock consultants and trained nurses, we provide exceptional support for critical conditions.",
+      title: "Pathology & Lab Services",
+      text: "Accurate and quick test results from our NABL-standard labs ensure prompt diagnosis and treatment decisions.",
     },
   ];
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-[#3B3486] text-white text-center py-16 px-6">
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="bg-[#3B3486] text-white text-center py-16 px-6"
+      >
         <h1 className="text-5xl font-serif font-semibold mb-6">
           Our Specialities
         </h1>
-        <p className="max-w-3xl mx-auto text-lg leading-relaxed mb-8">
-          At Maa Tulya Hospital, we strive to make your well-being our top priority and we
-          ensure that by bringing together multiple medical experts under one
-          roof. Various doctors in specialties encompassing Internal Medicine,
-          Endocrinology, Paediatrics, and Gynecology work in close collaboration
-          to make sure the patient leaves the hospital satisfied.
+        <p className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-100">
+          Maa Tulya Hospital houses multiple departments working in synergy to
+          provide holistic healthcare. Our team of specialists, equipped with
+          modern technology, ensures accurate diagnosis, effective treatment,
+          and compassionate care — all under one roof.
         </p>
-        <button className="border-2 border-white rounded-full px-6 py-2 font-semibold hover:bg-white hover:text-[#3B3486] transition-all">
-          Find Your Doctor
+        <button className="mt-8 border-2 border-white rounded-full px-6 py-2 font-semibold hover:bg-white hover:text-[#3B3486] transition-all">
+          Book Appointment
         </button>
-      </section>
+      </motion.section>
 
-      {/* Services Title */}
-      <section className="bg-[#F7F0EB] py-16 px-6 text-center">
-        <h2 className="text-4xl font-serif font-semibold mb-4 text-black">
-          Our Services
-        </h2>
+      {/* Departments Section */}
+      <section className="bg-[#F7F0EB] py-16 px-6 md:px-20 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-serif font-semibold text-[#3B3486] mb-4"
+        >
+          Centres of Excellence
+        </motion.h2>
         <p className="max-w-2xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg mb-12">
-          Experienced doctors with expertise across specialities are associated
-          with Maa Tulya Hospital. This helps us in understanding our patients’
-          problems better and provide complete care.
+          At Maa Tulya Hospital, we have created dedicated departments that
+          deliver excellence across specialities. Each department combines
+          expert doctors, advanced technology, and patient-centered service to
+          achieve the highest standard of care.
         </p>
 
-        {/* Specialities Grid */}
+        {/* Grid of Specialities */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialities.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white border border-[#E4DAD2] rounded-xl p-6 shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-200"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="bg-white border border-[#E4DAD2] rounded-2xl p-8 shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
             >
               <h3 className="text-2xl font-serif font-semibold text-[#3B3486] mb-3">
                 {item.title}
@@ -123,54 +118,123 @@ function Specialities() {
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {item.text}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#3B3486] text-white py-12 px-6 md:px-20 text-sm">
-        <div className="grid md:grid-cols-4 gap-10 border-t border-[#5C5792] pt-8">
-          {/* Contacts */}
-          <div>
-            <h3 className="font-semibold mb-2 text-lg">Contacts</h3>
-            <p>8588831732 9873754555</p>
-            <p>011-40793535 79620024</p>
-            <p>9873753999</p>
-          </div>
+      {/* Patient-Centric Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="bg-white py-20 px-6 md:px-20 text-center"
+      >
+        <h2 className="text-4xl font-serif font-semibold text-[#3B3486] mb-6">
+          Patient-Centric Approach
+        </h2>
+        <p className="max-w-3xl mx-auto text-gray-700 text-lg mb-10">
+          Every department at Maa Tulya Hospital operates with one guiding
+          principle — patient first. From preventive health checkups to
+          emergency care, we ensure safety, empathy, and quality at every step.
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-[#3B3486] text-white rounded-full px-8 py-3 font-semibold hover:bg-[#2E277A] transition-all"
+        >
+          View Health Packages
+        </motion.button>
+      </motion.section>
 
-          {/* Email */}
+      {/* Write To Us Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="bg-gradient-to-r from-[#3B3486] to-[#5C55A5] text-white text-center py-20 px-6"
+      >
+        <h2 className="text-4xl font-serif font-semibold mb-4">
+          Write To Us
+        </h2>
+        <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-100">
+          Have a question or need an appointment? We’d love to hear from you.
+          Reach out for consultations, health advice, or any feedback — our team
+          will respond promptly.
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-white text-[#3B3486] rounded-full px-8 py-3 font-semibold hover:bg-[#E4E4E4] transition-all"
+        >
+          Get In Touch
+        </motion.button>
+      </motion.section>
+
+      {/* 🌆 Enhanced Footer Section */}
+      <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-b border-white/20 pb-10">
+          {/* Hospital Info */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Email</h3>
-            <p>admin.maatulyahospital@gmail.com</p>
-            <div className="flex space-x-4 mt-2">
-              <i className="fab fa-facebook-f"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-x-twitter"></i>
+            <h3 className="text-2xl font-semibold mb-4">Maa Tulya Hospital</h3>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Dedicated to providing compassionate and quality healthcare
+              to every individual with trust and care.
+            </p>
+            <div className="flex space-x-4 mt-5">
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-instagram text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-linkedin-in text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-x-twitter text-lg"></i>
+              </a>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Home</h3>
-            <ul className="space-y-1">
-              <li>About Us</li>
-              <li>NABH</li>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>📍 Plot No. 12, Sector 9, Dwarka, New Delhi</li>
+              <li>📞 8588831732 / 9873754555</li>
+              <li>☎️ 011-40793535 / 011-79620024</li>
+              <li>✉️ admin.maatulyahospital@gmail.com</li>
             </ul>
           </div>
 
-          {/* More Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-2 text-lg">Specialities</h3>
-            <ul className="space-y-1">
-              <li>Find a Doctor</li>
-              <li>Contact</li>
+            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li><a href="/" className="hover:text-[#FFD700]">Home</a></li>
+              <li><a href="/about" className="hover:text-[#FFD700]">About Us</a></li>
+              <li><a href="/specialities" className="hover:text-[#FFD700]">Specialities</a></li>
+              <li><a href="/contact" className="hover:text-[#FFD700]">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>✔️ Emergency & Trauma Care</li>
+              <li>✔️ Multi-Speciality OPD</li>
+              <li>✔️ Diagnostic & Lab Services</li>
+              <li>✔️ Maternity & Child Care</li>
             </ul>
           </div>
         </div>
 
-        <div className="text-center text-xs mt-10 opacity-80">
-          Copyright © 2025. All Rights Reserved | Designed by RNA HealthTech
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8 text-gray-300 text-xs border-t border-white/10 pt-6">
+          <p>© {new Date().getFullYear()} Maa Tulya Hospital. All Rights Reserved.</p>
+          <p className="mt-3 md:mt-0">
+            Designed & Developed by{" "}
+            <span className="font-semibold text-[#FFD700]">ADITYA SHARMA</span>
+          </p>
         </div>
       </footer>
     </div>

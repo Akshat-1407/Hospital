@@ -154,15 +154,72 @@ function Home() {
         </div>
       </section>
 
-      {/* ================= FOOTER ================= */}
-      <footer className="bg-[#37327A] text-white px-8 md:px-24 py-12 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Write To Us</h2>
-        <p className="text-gray-300 mb-6">Share your feedback</p>
-        <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#37327A] transition">
-          Get In Touch
-        </button>
-        <div className="mt-10 text-gray-300 text-sm">
-          <p>© 2024. All Rights Reserved | Designed by MIA-HealthTech</p>
+      {/* 🌆 Enhanced Footer Section */}
+      <footer className="bg-gradient-to-br from-[#3B3486] via-[#4A4299] to-[#6B63C7] text-white pt-16 pb-8 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 border-b border-white/20 pb-10">
+          {/* Hospital Info */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Maa Tulya Hospital</h3>
+            <p className="text-gray-200 text-sm leading-relaxed">
+              Dedicated to providing compassionate and quality healthcare
+              to every individual with trust and care.
+            </p>
+            <div className="flex space-x-4 mt-5">
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-instagram text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-linkedin-in text-lg"></i>
+              </a>
+              <a href="#" className="hover:text-[#FFD700] transition-colors">
+                <i className="fab fa-x-twitter text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>📍 Plot No. 12, Sector 9, Dwarka, New Delhi</li>
+              <li>📞 8588831732 / 9873754555</li>
+              <li>☎️ 011-40793535 / 011-79620024</li>
+              <li>✉️ admin.maatulyahospital@gmail.com</li>
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li><a href="/" className="hover:text-[#FFD700]">Home</a></li>
+              <li><a href="/about" className="hover:text-[#FFD700]">About Us</a></li>
+              <li><a href="/specialities" className="hover:text-[#FFD700]">Specialities</a></li>
+              <li><a href="/contact" className="hover:text-[#FFD700]">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li>✔️ Emergency & Trauma Care</li>
+              <li>✔️ Multi-Speciality OPD</li>
+              <li>✔️ Diagnostic & Lab Services</li>
+              <li>✔️ Maternity & Child Care</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8 text-gray-300 text-xs border-t border-white/10 pt-6">
+          <p>© {new Date().getFullYear()} Maa Tulya Hospital. All Rights Reserved.</p>
+          <p className="mt-3 md:mt-0">
+            Designed & Developed by{" "}
+            <span className="font-semibold text-[#FFD700]">ADITYA SHARMA</span>
+          </p>
         </div>
       </footer>
     </div>
