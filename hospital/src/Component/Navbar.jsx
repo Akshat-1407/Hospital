@@ -90,7 +90,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-3 animate-slideDown">
             <img
-              src="/public/hosp_logo.png"
+              src="/hosp_logo.png"
               alt="logo"
               className="h-20 hover:scale-105 transition-transform"
             />
