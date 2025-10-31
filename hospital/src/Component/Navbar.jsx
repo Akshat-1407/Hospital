@@ -53,7 +53,7 @@ function Navbar() {
           {/* Right Side: Social Icons */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/"
               className="p-2 bg-white hover:bg-green-100 border border-green-200 rounded-full transition-all transform hover:scale-110 shadow-sm"
             >
               <FaFacebookF className="text-green-700 text-sm" />

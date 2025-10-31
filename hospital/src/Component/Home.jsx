@@ -42,9 +42,9 @@ function Home() {
         </button>
       </section>
 
-      {/* ================= OUR SERVICES ================= */}
+      {/* ================= Center Of Excellence ================= */}
       <section className="bg-[#FFF9F3] px-8 md:px-24 py-20 text-center">
-        <h2 className="text-3xl font-semibold mb-12">Our Services</h2>
+        <h2 className="text-3xl font-semibold mb-12">Center Of Excellence</h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-left">
           {[
@@ -102,7 +102,7 @@ function Home() {
             <p className="italic text-gray-300">– Dr. Prashant Sharma</p>
           </div>
           <img
-            src="https://karunahospital.in/wp-content/uploads/2024/03/director.jpg"
+            src="https://karunahospital.in/wp-content/uploads/2024/03/dr-rajeev-gupta.jpeg"
             alt="Director"
             className="md:w-1/3 rounded-xl shadow-lg"
           />
