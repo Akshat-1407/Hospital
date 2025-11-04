@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -127,13 +129,25 @@ function FindDoctor() {
               <p className="text-gray-700 text-sm md:text-base mb-4">
                 {doctor.speciality}
               </p>
-              <button className="text-[#3B3486] border border-[#3B3486] px-4 py-1 rounded-full hover:bg-[#3B3486] hover:text-white transition-all duration-200">
-                <a href="DrPrashantSharma.jsx">View Profile</a>
-              </button>
+
+              {/* ✨ Animated View Profile Button */}
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to={`/profile/${doctor.name
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")
+                  .replace(/\./g, "")
+                }`}
+                className="inline-block px-5 py-2 text-[#3B3486] border border-[#3B3486] rounded-full font-medium hover:bg-[#3B3486] hover:text-white transition-all duration-300"
+                >
+                  View Profile
+                </Link>
+              </motion.div>
             </motion.div>
           ))}
         </div>
       </section>
+
 
       {/* Compassion Section */}
       <motion.section
