@@ -214,7 +214,7 @@ const HERO_IMAGES_LIGHT = [
 const HERO_IMAGES_DARK = [
   {
     id: "hd1",
-    src: "https://images.unsplash.com/photo-1587500154036-7b3d9a0b7d7d?auto=format&fit=crop&w=1400&q=80",
+    src: "https://t4.ftcdn.net/jpg/00/93/58/75/360_F_93587518_EnSEDdLZLFw184tr9BWOC8OFAmGEIdAN.jpg",
     alt: "Emergency team working at night",
     heading: "24/7 Emergency & Trauma Care",
     sub: "Rapid triage, stabilization, and ambulance coordination",
@@ -459,7 +459,7 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <section id="services" aria-label="services" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.header initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+          <motion.header initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
             <h2 className="text-2xl md:text-3xl font-bold text-[#111827]">Services & Specialities</h2>
             <p className="mt-3 text-gray-600 max-w-3xl">
               Core clinical services tailored to local needs — emergency care, cardiology, orthopaedics, maternity, paediatrics, diagnostics and more.
@@ -473,6 +473,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.06 }}
+                viewport={{ once: true }}
                 className="bg-white p-6 rounded-lg shadow hover:shadow-2xl transform hover:-translate-y-2 transition"
               >
                 <div className="flex items-start gap-4">
@@ -503,7 +504,7 @@ export default function Home() {
       {/* DOCTORS SECTION */}
       <section id="doctors" aria-label="doctors" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.header initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <motion.header initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="text-2xl md:text-3xl font-bold text-[#111827]">Our Doctors</h2>
             <p className="mt-3 text-gray-600 max-w-2xl">
               Meet the experienced clinicians who deliver care across the hospital’s core departments.
@@ -517,6 +518,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.04 }}
+                viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-4 shadow hover:shadow-lg transition transform hover:-translate-y-1"
               >
                 <Link to={`/doctors/${slugify(doc.name)}`} className="block">
@@ -630,7 +632,7 @@ export default function Home() {
       {/* FAQ */}
       <section id="faq" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-2xl md:text-3xl font-semibold">
+          <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-2xl md:text-3xl font-semibold">
             Frequently Asked Questions
           </motion.h2>
 
@@ -646,7 +648,7 @@ export default function Home() {
       {/* CONTACT & LOCATION */}
       <section id="contact" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-2xl md:text-3xl font-semibold">
+          <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-2xl md:text-3xl font-semibold">
             Contact & Location
           </motion.h2>
 
