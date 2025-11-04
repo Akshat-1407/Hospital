@@ -12,8 +12,8 @@ function Home() {
           </h1>
           <p className="text-gray-200 text-lg">
             Bringing together technology and empathy to make a difference for
-            every individual. Maa Tulya Hospital strives to provide state-of-the-art
-            medical care at accessible costs.
+            every individual. Maa Tulya Hospital strives to provide
+            state-of-the-art medical care at accessible costs.
           </p>
           <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#37327A] transition">
             NABH Certificate
@@ -23,23 +23,30 @@ function Home() {
           <img
             src="./building.jpg"
             alt="hospital"
-            className="rounded-xl shadow-lg w-full max-w-md"
+            className="rounded-xl shadow-lg w-full max-w-md "
           />
         </div>
       </section>
 
       {/* ================= ABOUT SECTION ================= */}
-      <section className="bg-[#37327A] text-white px-8 md:px-24 py-16 text-center md:text-left">
-        <h2 className="text-3xl font-semibold mb-3">About Maa Tulya Hospital</h2>
-        <p className="text-gray-200 mb-6 max-w-3xl">
-          Established in 2011, Maa Tulya Hospital is known for its expertise in both
-          outpatient and inpatient healthcare. The hospital employs a team of
-          expert doctors who believe in compassionate and holistic care for all
-          patients.
-        </p>
-        <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#37327A] transition">
-          Read More
-        </button>
+      <section className=" hidden md:flex items-center gap-8 text-lg font-medium bg-[#37327A] text-white px-8 md:px-24 py-16 text-center md:text-left">
+        <div>
+          <h2 className="text-3xl font-semibold mb-3">
+            About Maa Tulya Hospital
+          </h2>
+          <p className="text-gray-200 mb-6 max-w-3xl">
+            Established in 2011, Maa Tulya Hospital is known for its expertise
+            in both outpatient and inpatient healthcare. The hospital employs a
+            team of expert doctors who believe in compassionate and holistic
+            care for all patients.
+          </p>
+          <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-[#37327A] transition">
+            Read More
+          </button>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <h1> video</h1>
+        </div>
       </section>
 
       {/* ================= Center Of Excellence ================= */}
@@ -117,7 +124,10 @@ function Home() {
         <div className="grid md:grid-cols-3 gap-10 text-left">
           <div>
             <h3 className="font-bold text-lg mb-2">Clinical Excellence</h3>
-            <p>Our team of doctors brings decades of combined experience and expertise.</p>
+            <p>
+              Our team of doctors brings decades of combined experience and
+              expertise.
+            </p>
           </div>
           <div>
             <h3 className="font-bold text-lg mb-2">Emergency Services</h3>
@@ -131,8 +141,8 @@ function Home() {
 
         <div className="mt-16 text-center">
           <div className="bg-[#E8614C] text-white p-8 rounded-xl max-w-xl mx-auto italic">
-            “Empathy lies at the core of our service values reflected in compassionate
-            treatment and expert care.”
+            “Empathy lies at the core of our service values reflected in
+            compassionate treatment and expert care.”
           </div>
         </div>
       </section>
@@ -143,8 +153,8 @@ function Home() {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Maa Tulya Hospital</h3>
             <p className="text-gray-200 text-sm leading-relaxed">
-              Dedicated to providing compassionate and quality healthcare
-              to every individual with trust and care.
+              Dedicated to providing compassionate and quality healthcare to
+              every individual with trust and care.
             </p>
             <div className="flex space-x-4 mt-5">
               <a href="#" className="hover:text-[#FFD700] transition-colors">
@@ -177,10 +187,26 @@ function Home() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-200 text-sm">
-              <li><a href="/" className="hover:text-[#FFD700]">Home</a></li>
-              <li><a href="/about" className="hover:text-[#FFD700]">About Us</a></li>
-              <li><a href="/speciality" className="hover:text-[#FFD700]">Specialities</a></li>
-              <li><a href="/contactUs" className="hover:text-[#FFD700]">Contact</a></li>
+              <li>
+                <a href="/" className="hover:text-[#FFD700]">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="hover:text-[#FFD700]">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/speciality" className="hover:text-[#FFD700]">
+                  Specialities
+                </a>
+              </li>
+              <li>
+                <a href="/contactUs" className="hover:text-[#FFD700]">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -197,7 +223,10 @@ function Home() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-8 text-gray-300 text-xs border-t border-white/10 pt-6">
-          <p>© {new Date().getFullYear()} Maa Tulya Hospital. All Rights Reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Maa Tulya Hospital. All Rights
+            Reserved.
+          </p>
           <p className="mt-3 md:mt-0">
             Designed & Developed by{" "}
             <span className="font-semibold text-[#FFD700]">ADITYA SHARMA</span>

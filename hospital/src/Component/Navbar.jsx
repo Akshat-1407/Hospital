@@ -78,7 +78,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-full fixed top-0 left-0 z-50">
+    <div className="w-full  sticky top-0 left-0 z-50">
       {/* SEO Meta Tags */}
       <Helmet>
         <title>Maa Tulya Hospital – Multispeciality Hospital in Baghpat</title>
@@ -143,12 +143,12 @@ function Navbar() {
           <div className="hidden lg:flex items-center justify-center flex-1" />
 
           {/* Right: Emergency (big) + Socials */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 h-10px">
             {/* Large Emergency - desktop/tablet */}
             <a
               href={`tel:${EMERGENCY_NUMBER}`}
               aria-label="Call Emergency"
-              className="hidden md:flex items-center px-6 py-3 rounded-full text-white font-semibold text-lg shadow-2xl transform transition-all duration-300 animate-emergencyPulse"
+              className="hidden md:flex items-center px-3 py-1.5 rounded-full text-white font-semibold text-lg shadow-2xl transform transition-all duration-300 animate-emergencyPulse"
               style={{
                 // gradient-like background that still uses red/orange palette
                 background:
@@ -188,7 +188,7 @@ function Navbar() {
       {/* MAIN NAVBAR */}
       <nav
         className={`transition-all duration-500 ease-in-out w-full backdrop-blur-lg ${
-          scrolled ? "bg-white/80 shadow-md border-b border-gray-200 py-2" : "bg-white/95 py-4"
+          scrolled ? "bg-white/80 shadow-md border-b border-gray-200 py-2" : "bg-white/95 py-2"
         }`}
       >
         <div className="flex items-center justify-between px-6 md:px-16 relative">
