@@ -6,7 +6,6 @@ import FindDoctor from "./Component/FindDoctor"
 import PageNotFound from "./Component/PageNotFound"
 import ContactUS from"./Component/ContactUs"
 import AboutUS from "./Component/AboutUs"
-import DoctorProfile from "./Component/Profile/DoctorProfile";
 import DrPrashantSharma from "./Component/Profile/DrPrashantSharma";
 import DrSatyaPrakash from "./Component/Profile/DrSatyaPrakash";
 import DrSethiGupta from "./Component/Profile/DrSethiGupta";
@@ -29,7 +28,6 @@ function App() {
         <Route path="/find_a_doctor" element={<FindDoctor></FindDoctor>}></Route>
         <Route path="/contactUs" element={<ContactUS></ContactUS>}></Route>
         <Route path="/about" element={<AboutUS></AboutUS>}></Route>
-        <Route path="/profile/:doctorName" element={<DoctorProfile />} />
         <Route path="/profile/dr-prashant-sharma" element={<DrPrashantSharma />} />
         <Route path="/profile/dr-satya-prakash" element={<DrSatyaPrakash />} />
         <Route path="/profile/dr-sethi-gupta" element={<DrSethiGupta />} />
