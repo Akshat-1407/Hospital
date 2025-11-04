@@ -52,7 +52,6 @@ function Navbar() {
       subLinks: [
         { label: "Our Vision", path: "/about#vision" },
         { label: "Our Team", path: "/about#team" },
-        { label: "Certificates", path: "/about#certificates" },
       ],
     },
     {
@@ -68,11 +67,10 @@ function Navbar() {
     {
       label: "Find a Doctor",
       path: "/find_a_doctor",
-      subLinks: [
-        { label: "By Department", path: "/find_a_doctor#department" },
-        { label: "By Name", path: "/find_a_doctor#name" },
-        { label: "By Experience", path: "/find_a_doctor#experience" },
-      ],
+    },
+    {
+      label: "Blogs and News",
+      path: "/blogs_and_news",
     },
     { label: "Contact Us", path: "/contactUs" },
   ];
