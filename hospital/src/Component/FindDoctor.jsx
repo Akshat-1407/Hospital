@@ -128,7 +128,7 @@ function FindDoctor() {
                 {doctor.speciality}
               </p>
               <button className="text-[#3B3486] border border-[#3B3486] px-4 py-1 rounded-full hover:bg-[#3B3486] hover:text-white transition-all duration-200">
-                View Profile
+                <a href="DrPrashantSharma.jsx">View Profile</a>
               </button>
             </motion.div>
           ))}
